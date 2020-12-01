@@ -10,6 +10,7 @@ namespace BinarySearchProj
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
