@@ -76,45 +76,6 @@ namespace BinarySearchProj
                     }    
                 }
             }
-            //else if(nodeToAdd.data <= rootNode.data) This is missing the ability to go beyond rootMethod.......
-            //{
-            //    if(rootNode.left == null)
-            //    {
-            //        rootNode.left = nodeToAdd;
-            //    }
-            //    else
-            //    {
-            //        Node current = rootNode.left;
-
-            //        if(nodeToAdd.data <= current.data)
-            //        {
-            //            current.left = nodeToAdd;
-            //        }
-            //        else
-            //        {
-            //            current.right = nodeToAdd;
-            //        }
-            //    }
-            //}
-            //else if(nodeToAdd.data > rootNode.data)
-            //{
-            //    if(rootNode.right == null)
-            //    {
-            //        rootNode.right = nodeToAdd;
-            //    }
-            //    else
-            //    {
-            //        Node current = rootNode.right;
-            //        if (nodeToAdd.data > current.data)
-            //        {
-            //            current.right = nodeToAdd;
-            //        }
-            //        else
-            //        {
-            //            current.left = nodeToAdd;
-            //        }
-            //    }
-            //}
         }
 
     }
