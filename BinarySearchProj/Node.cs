@@ -11,13 +11,11 @@ namespace BinarySearchProj
         public int data;
         public Node left;
         public Node right;
-        public Node nextNode;
         public Node (int data)
         {
             this.data = data;
             left = null;
             right = null;
-            nextNode = null;
         }
     }
 }

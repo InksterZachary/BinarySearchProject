@@ -9,7 +9,6 @@ namespace BinarySearchProj
     class BinarySearchTree
     {
         public Node rootNode;
-        public Node lastNode;
         
 
         public BinarySearchTree()
@@ -27,12 +26,11 @@ namespace BinarySearchProj
             {
                 Node current = rootNode;
 
-                while (current.data == data == false)
+                while (current.data != data)
                 {
                     if (data < current.data)
                     {
                         current = current.left;
-                        break;
                     }
                     else
                     {
@@ -53,7 +51,7 @@ namespace BinarySearchProj
                 Node current = rootNode;
                 while (true)
                 {
-                    if(nodeToAdd.data < current.data)
+                    if(nodeToAdd.data <= current.data)
                     {
                         if(current.left == null)
                         {
@@ -62,8 +60,7 @@ namespace BinarySearchProj
                         }
                         else
                         {
-                            lastNode = current.left;
-                            lastNode = current;
+                            current = current.left;
                         }
                     }
                     else if(nodeToAdd.data > current.data)
@@ -74,13 +71,12 @@ namespace BinarySearchProj
                         }
                         else
                         {
-                            lastNode = current.right;
-                            current = lastNode;
+                            current = current.right;
                         }
                     }    
                 }
             }
-            //else if(nodeToAdd.data <= rootNode.data)
+            //else if(nodeToAdd.data <= rootNode.data) This is missing the ability to go beyond rootMethod.......
             //{
             //    if(rootNode.left == null)
             //    {
